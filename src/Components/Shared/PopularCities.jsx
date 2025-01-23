@@ -1,8 +1,9 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../css/PopularCities.css';
+
 // City data array
 const cityData = [
   { name: 'Indore', image: 'images/icons/dehradun_city.jpg' },
@@ -20,6 +21,9 @@ const cityData = [
 ];
 
 const PopularCities = ({title}) => {
+  useEffect(() => {
+    window.dispatchEvent(new Event('resize')); // Force resize event
+  }, []);
   const settings = {
     ltr: false, // Enables right-to-left scrolling
     infinite: true,
@@ -29,7 +33,7 @@ const PopularCities = ({title}) => {
     draggable: true,
     swipeToSlide: true,
     autoplay: true, // Enable autoplay
-    autoplaySpeed: 0, // Speed for continuous scroll
+    autoplaySpeed: 3000, // Speed for continuous scroll
     cssEase: 'linear', // Ensures smooth transition
     pauseOnHover: true, // Pause on hover
     responsive: [
@@ -47,7 +51,8 @@ const PopularCities = ({title}) => {
       },
     ],
   };
-
+  console.log(cityData)
+  
   return (
     <section className="our-partner">
       <div className="container-fluid">
@@ -59,7 +64,8 @@ const PopularCities = ({title}) => {
         <div className="row">
           <div className="col-12">
             <Slider className="partner-list mt-3" {...settings}>
-              {cityData.map((city, index) => (
+              {
+              cityData.map((city, index) => (
                 <div key={index} className="item">
                   <div className="icon">
                     <img src={city.image} alt={city.name} />

@@ -1,6 +1,25 @@
-.partner-list11{
-    display: flex !important;
-    align-items: center;
-    justify-items: center;
-    gap: 20px;
-}
+.partner-list .item {
+    text-align: center;
+    padding: 10px;
+  }
+  
+  .partner-list .icon img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .partner-list .overlaya {
+    text-align: center;
+    margin-top: 5px;
+  }
+  
+  .our-partner {
+    padding: 20px 0;
+  }
+  
+  .slick-slider {
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+  }
+  
