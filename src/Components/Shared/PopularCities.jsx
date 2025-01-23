@@ -3,7 +3,6 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../css/PopularCities.css';
-import SimpleSlider from '../slick';
 // City data array
 const cityData = [
   { name: 'Indore', image: 'images/icons/dehradun_city.jpg' },
@@ -50,7 +49,7 @@ const PopularCities = ({title}) => {
   };
 
   return (
-<>   <section className="our-partner">
+    <section className="our-partner">
       <div className="container-fluid">
         <div className="section-header text-center">
           <div className="main-title py-3">
@@ -75,9 +74,6 @@ const PopularCities = ({title}) => {
         </div>
       </div>
     </section>
-    <SimpleSlider/>
-    
-    </>
   );
 };
 

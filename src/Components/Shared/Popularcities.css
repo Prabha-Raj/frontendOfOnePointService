@@ -1,0 +1,6 @@
+.partner-list11{
+    display: flex !important;
+    align-items: center;
+    justify-items: center;
+    gap: 20px;
+}
