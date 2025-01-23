@@ -1,0 +1,24 @@
+.feature-box {
+    padding: 20px;
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .feature-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-5px);
+  }
+  
+  .feature-icon img {
+    max-width: 60px;
+    margin-bottom: 15px;
+  }
+  
+  .feature-text {
+    font-size: 16px;
+    font-weight: 600;
+    color: #333;
+  }
+  

@@ -1,0 +1,84 @@
+.bookingSection {
+    background-color: #f9f9f9;
+    padding: 40px 0;
+  }
+  
+  .main-title {
+    font-size: 24px;
+    /* font-weight: bold; */
+  }
+  
+
+  .blue {
+    color: #ff3d3d; /* Red as shown in the screenshot */
+  }
+  
+  .card {
+    border-radius: 10px;
+    border-top: 1px solid black;
+    transition: all 0.3s ease-in-out;
+    width: 260px; /* Adjusted width to match the design */
+    height: 150px; /* Adjusted height to match the design */
+    margin: 0 auto; /* Center the card within its container */
+    
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .card-body {
+    padding: 15px;
+    
+     height: auto !important; 
+  }
+  
+  .card-footer {
+    /* padding: 15px; */
+    border-top: 1px solid black; /* Add a subtle top border to match the design */
+  }
+  
+.card-title{
+    font-size: 15px;
+    
+  }
+
+
+  .avatar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    width: 40px;
+    /* color: black; */
+    border: 1px solid #f2f2f2;
+    background-color: #f2f2f2; /* Match the light gray background in the image */
+  }
+  
+  .fa-user {
+    font-size: 20px;
+  }
+  
+  .fa-map-marker-alt {
+    color: #ff3d3d; /* Icon color matching the design */
+  }
+  
+  .slick-dots li button:before {
+    font-size: 12px;
+    color: #aaa;
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: #ff3d3d;
+  }
+  
+  .slick-slide {
+    display: flex;
+    justify-content: center; /* Center slides horizontally */
+    padding: 10px;
+  }
+  
+  .item {
+    max-width: 350px; /* Match the overall card container size */
+  }
+  

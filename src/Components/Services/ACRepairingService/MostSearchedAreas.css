@@ -1,0 +1,26 @@
+.Area-Pincodes {
+    padding: 30px 0;
+    background-color: #ffff;
+  }
+  
+  .main-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  /* .main-title .blue {
+    color: #007bff;
+  }
+   */
+  .btn-grad {
+    /* background: linear-gradient(to right, #6a11cb, #2575fc); */
+    color: white;
+    font-size: 13px !important;
+    padding: 5px 5px !important;
+    text-align: center;
+    /* border-radius: 5px; */
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  
+  

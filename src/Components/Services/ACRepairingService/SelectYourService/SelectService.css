@@ -1,0 +1,50 @@
+/* Smooth Transition for Service List */
+.service-list-container {
+    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+  
+  .fade-in {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  
+  /* Category Tabs */
+  .nav-tabs {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .nav-tabs .tab {
+    cursor: pointer;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .nav-tabs .tab.active {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .nav-tabs .icon {
+    max-width: 50px;
+    margin-bottom: 5px;
+  }
+  
+
+  .service-list-container {
+    max-height: 600px; /* Adjust height as needed */
+    overflow-y: auto; /* Enables vertical scrolling */
+    padding: 10px; /* Optional: Add some padding */
+    /* border: 1px solid #ccc; Optional: Add a border */
+    /* background-color: #f9f9f9; Optional: Background color */
+  }
+  

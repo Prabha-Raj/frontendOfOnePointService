@@ -1,0 +1,14 @@
+#Navbar {
+    position: fixed; /* Fixes the navbar at the top */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1030; /* Keeps it on top of other content */
+    background-color: #fff; /* Ensure the navbar background is solid */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional for aesthetics */
+    border-bottom: 1px solid #ddd; /* Optional for a bottom border */
+}
+
+body {
+    padding-top: 130px; /* Adjust based on navbar height to prevent content overlap */
+}

@@ -1,0 +1,95 @@
+.subServiceCard {
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative; /* Ensure the badge positions relative to the card */
+  }
+  
+  .subServiceCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  .warranty-badge {
+    position: absolute; /* Allow positioning relative to the card */
+    top: 0px;          /* Distance from the top border */
+    right: 0px;        /* Distance from the right border */
+    background-color: #ff0022;
+    font-size: 9px !important;
+    border-radius: 0px  !important;
+    z-index: 1; /* Ensure the badge stays on top */
+    padding: 5px 10px;
+  }
+  
+  .card-title {
+    font-size: 16px !important;
+    font-weight: 400;
+  }
+  
+  .card-text {
+    font-size: 14px !important;
+    color: #6c757d;
+  }
+  
+  .extra-info .time {
+    font-size: 12px;
+    color: #6c757d;
+  }
+  
+  .extra-info .rating {
+    font-size: 12px;
+  }
+  
+  .subServicePrice {
+    font-size: 20px;
+  }
+  
+  .btn-outline-danger {
+    color: #ff0022 !important;
+    border-color: #ff0022;
+  }
+  
+  .btn-outline-danger:hover {
+    background-color: #ff0022;
+    color: white;
+    border-color: #ff0022;
+  }
+  
+  /* Counter Box */
+.counter-box {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .counter-btn {
+    background-color: transparent;
+    border: 1px solid #dc3545;
+    color: #dc3545;
+    width: 30px;
+    height: 30px;
+    font-size: 18px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .counter-btn:hover {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .counter-input {
+    width: 40px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    height: 30px;
+    font-size: 16px;
+    outline: none;
+  }
+  

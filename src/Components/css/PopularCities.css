@@ -1,0 +1,54 @@
+.item {
+  position: relative;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 140px !important;
+  max-width: 100px !important;
+}
+
+.icon img {
+  width: 100%; /* Allow the image size to scale responsively */
+  max-width: 100%; /* Restrict the maximum width */
+  height: auto;
+  border-radius: 10px;
+}
+
+.overlaya {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%; /* Match the width of the image */
+  height: 100%; /* Match the height of the image */
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex; /* Flexbox for centering text */
+  align-items: center; /* Vertical centering */
+  justify-content: center; /* Horizontal centering */
+  border-radius: 10px; /* Match the image's border-radius */
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+/* Responsive Media Queries */
+@media (max-width: 768px) {
+  .icon img {
+    max-width: 100px; /* Slightly smaller for tablets */
+  }
+
+  .overlaya {
+    font-size: 14px; /* Adjust text size for smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .icon img {
+    max-width: 80px; /* Even smaller for mobile devices */
+  }
+
+  .overlaya {
+    font-size: 12px; /* Further reduce text size */
+    padding: 5px; /* Ensure enough padding */
+  }
+}

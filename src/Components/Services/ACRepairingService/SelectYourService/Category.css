@@ -1,0 +1,15 @@
+.nav-tabs{
+    border: 1px solid #f0f0f0 !important;
+    padding-right:5px;
+    border-radius: 10px;
+
+}
+.tab{
+    border: none !important;
+}
+.nav-tabs .active{
+    background-color: #ffff !important;
+}
+.nav-tabs span{
+    font-size: 11px !important;
+}

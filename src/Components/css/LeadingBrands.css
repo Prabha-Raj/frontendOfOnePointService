@@ -1,0 +1,16 @@
+.leading-brands .slick-slide {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .leading-brands .brand-logo {
+    padding: 10px;
+  }
+  
+  .leading-brands img {
+    max-width: 100%; /* Ensure images scale properly */
+    max-height: 100px; /* Limit the height of logos */
+    object-fit: contain; /* Maintain aspect ratio */
+  }
+  

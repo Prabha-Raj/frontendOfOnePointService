@@ -1,0 +1,60 @@
+/* General card styling */
+.service-card {
+    width: 180px; /* Fixed width */
+    height: 220px; /* Fixed height */
+    background-color: red; /* Light background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    padding: 50px; /* Padding inside the card */
+    text-align: center; /* Center-align text and content */
+    overflow: hidden; /* Prevent overflow of content */
+    display: flex; /* Flexbox for alignment */
+    flex-direction: column; /* Stack content vertically */
+    /* justify-content: space-between; Space between elements */
+  }
+  
+  /* Image styling */
+  .service-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain; /* Ensures the image scales properly */
+    /* margin-bottom: 10px; */
+  }
+  
+  /* Title styling */
+  .service-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    white-space: nowrap; /* Prevent title from wrapping to multiple lines */
+    overflow: hidden; /* Hide overflowed text */
+    text-overflow: ellipsis; /* Add ellipsis for truncated text */
+    margin: 0;
+    line-height: 1.2;
+  }
+  
+  /* Link styling */
+  .service-link {
+    text-decoration: none;
+    color: #007bff; /* Bootstrap blue */
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .service-link:hover {
+    text-decoration: underline;
+    color: #0056b3; /* Darker blue on hover */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .service-card {
+      width: 150px;
+      height: 200px;
+    }
+  
+    .service-title {
+      font-size: 12px;
+    }
+  }
+  
