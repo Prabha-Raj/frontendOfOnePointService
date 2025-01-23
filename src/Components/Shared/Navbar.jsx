@@ -6,7 +6,7 @@ const Navbar = () => {
     return (
         <div>
             <nav className="navbar navbar-expand-lg px-3" id="Navbar">
-                <div className="container-fluid">
+                <div className="container-fluid navbar-container">
                     <Link className="navbar-brand" to="/">
                         <img src="/images/logo-one-point.svg" alt="Logo" />
                     </Link>
@@ -34,24 +34,24 @@ const Navbar = () => {
                                 <Link className="nav-link" to="/aboutus.html">About Us</Link>
                             </li>
                             <li className="nav-item dropdown">
-    <a
-        className="nav-link dropdown-toggle"
-        href="#"
-        id="servicesDropdown"
-        role="button"
-        aria-expanded="false"
-    >
-        Services
-    </a>
-    <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
-        <li><Link className="dropdown-item" to="/ac-repair-services.html">AC Repair &amp; Services</Link></li>
-        <li><Link className="dropdown-item" to="#">RO Repair &amp; Services</Link></li>
-        <li><Link className="dropdown-item" to="#">Washing Machine Repair</Link></li>
-        <li><Link className="dropdown-item" to="#">Refrigerator Repair</Link></li>
-        <li><Link className="dropdown-item" to="#">Geyser Repair &amp; Services</Link></li>
-        <li><Link className="dropdown-item" to="#">Microwave Repair Service</Link></li>
-    </ul>
-</li>
+                                <a
+                                    className="nav-link dropdown-toggle"
+                                    href="#"
+                                    id="servicesDropdown"
+                                    role="button"
+                                    aria-expanded="false"
+                                >
+                                    Services
+                                </a>
+                                <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
+                                    <li><Link className="dropdown-item" to="/ac-repair-services.html">AC Repair &amp; Services</Link></li>
+                                    <li><Link className="dropdown-item" to="#">RO Repair &amp; Services</Link></li>
+                                    <li><Link className="dropdown-item" to="#">Washing Machine Repair</Link></li>
+                                    <li><Link className="dropdown-item" to="#">Refrigerator Repair</Link></li>
+                                    <li><Link className="dropdown-item" to="#">Geyser Repair &amp; Services</Link></li>
+                                    <li><Link className="dropdown-item" to="#">Microwave Repair Service</Link></li>
+                                </ul>
+                            </li>
 
                             <li className="nav-item">
                                 <Link className="nav-link" to="#">Quick Help</Link>
