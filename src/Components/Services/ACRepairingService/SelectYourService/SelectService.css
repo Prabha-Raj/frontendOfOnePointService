@@ -38,13 +38,40 @@
     max-width: 50px;
     margin-bottom: 5px;
   }
-  
+  .container-left{
+    width: 200px;
+  }
 
+
+
+  
   .service-list-container {
-    max-height: 600px; /* Adjust height as needed */
+    max-height: 700px; /* Adjust height as needed */
     overflow-y: auto; /* Enables vertical scrolling */
     padding: 10px; /* Optional: Add some padding */
     /* border: 1px solid #ccc; Optional: Add a border */
     /* background-color: #f9f9f9; Optional: Background color */
   }
   
+  .service-list-container {
+    overflow: auto; /* Allow scrolling */
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer 10+ */
+  }
+  
+  .service-list-container::-webkit-scrollbar {
+    display: none; /* For Chrome, Safari, and Opera */
+  }
+
+  @media (max-width:767px){
+  .container-left .nav-tabs{
+    gap: 20px !important;
+  }
+ 
+  }
+  @media (max-width:425px){
+  .container-left .nav-tabs{
+    gap: 30px !important;
+  }
+  
+}

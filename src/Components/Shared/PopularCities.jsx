@@ -38,15 +38,47 @@ const PopularCities = ({title}) => {
     pauseOnHover: true, // Pause on hover
     responsive: [
       {
-        breakpoint: 1024,
+        breakpoint: 2560,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 10,
+          slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 600,
+        breakpoint: 1440,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 7,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 6,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 5,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 425,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+      {
+        breakpoint: 320,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          dots: false,
         },
       },
     ],

@@ -71,9 +71,9 @@
     height: 30px;
     font-size: 18px;
     border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
   }

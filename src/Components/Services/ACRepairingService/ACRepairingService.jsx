@@ -2,7 +2,6 @@ import React from "react";
 import Navbar from "../../Shared/Navbar";
 import Footer from "../../Shared/Footer";
 import FAQSection from "./FAQSection";
-// import SelectYourService from "./SelectYourService";
 import SelectService from "./SelectYourService/SelectService";
 import Testimonials from "./TestimonialsSec";
 import RecentBookings from "./RecentBooking";

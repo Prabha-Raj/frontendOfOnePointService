@@ -25,7 +25,7 @@ const Navbar = () => {
                         </span>
                     </button>
 
-                    <div className="collapse navbar-collapse" id="navbarMenu">
+                    <div className="collapse navbar-collapse ms-5" id="navbarMenu">
                         <ul className="navbar-nav ms-auto">
                             <li className="nav-item">
                                 <Link className="nav-link" to="/">Home</Link>
@@ -54,16 +54,16 @@ const Navbar = () => {
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link" to="/city">Quick Help</Link>
+                                <Link className="nav-link" to="#">Quick Help</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact_us.html">Contact Us</Link>
                             </li>
                         </ul>
 
-                        <div className="tracking-box p-3" style={{ width: "250px" }}>
-                            <a className="form-control" href="tel:+918400900581" style={{ textDecoration: "none" }}>
-                                <span className="text-secondary">+91-8400900581</span>
+                        <div className="tracking-box" >
+                            <a className="form-control " href="tel:+918400900581" style={{ textDecoration: "none" }}>
+                                <span className="text-secondary phone-link">+91-8400900581</span>
                                 &nbsp;&nbsp;<i className="fa-solid fa-phone" style={{ color: "red" }}></i>
                             </a>
                         </div>

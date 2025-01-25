@@ -1,5 +1,5 @@
 import React from "react";
-// import "./WhyChooseUs.css"; // Add styles in a separate CSS file if required.
+import "../css/WhyChooseUs.css"; // Add styles in a separate CSS file if required.
 
 const WhyChooseUs = () => {
     
@@ -16,7 +16,7 @@ const WhyChooseUs = () => {
         </div>
 
         {/* Features Section */}
-        <div className="row justify-content-center">
+        <div className="row whychoose justify-content-center">
           {/* Feature 1 */}
           <div className="col-6 col-md-6 col-lg-2">
             <div className="feature-box text-center">

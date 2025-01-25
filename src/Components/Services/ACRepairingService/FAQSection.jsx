@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./FAQSection.css"
 
 const FAQSection = () => {
   const faqs1 = [
@@ -71,7 +72,7 @@ const FAQSection = () => {
       <h2 style={{ textAlign: "center", marginBottom: "20px" }}>
         Frequently Asked <span style={{ color: "red" }}> Questions</span>
       </h2>
-      <div style={{ display: "flex", gap: "20px" }}>
+      <div className="faqs-sec" style={{ display: "flex", gap: "20px" }}>
         {/* Left Column */}
         <div style={{ width: "50%" }}>
           {faqs1.map((faq) => (

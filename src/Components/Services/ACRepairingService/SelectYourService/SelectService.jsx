@@ -381,11 +381,160 @@ const SelectService = () => {
       price: 999,
       warranty: '60 Days Warranty',
     },
+    {
+      category: 'Ductlable AC Repair',
+      title: 'Central AC Maintenance',
+      description: 'अगर आपके Central AC को सर्विसिंग की जरूरत है तो यहाँ दबायें',
+      price: 999,
+      warranty: '60 Days Warranty',
+    },
+    {
+      category: 'Central AC Repair',
+      title: 'Central AC Maintenance',
+      description: 'अगर आपके Central AC को सर्विसिंग की जरूरत है तो यहाँ दबायें',
+      price: 999,
+      warranty: '60 Days Warranty',
+    },
+    {
+      category: 'Window AC Repair',
+      title: 'Window AC Repair',
+      description: 'अगर आपका Window AC ठीक से कार्य नहीं कर रहा है तो यहाँ क्लिक करें',
+      price: 296,
+      warranty: '15 Days Warranty',
+    },
+    {
+      category: 'Split AC Repair',
+      title: 'Split AC Repair',
+      description: 'अगर आपका Split AC पर्याप्त ठण्डा नहीं कर रहा है तो यहाँ दबायें',
+      price: 299,
+      warranty: '15 Days Warranty',
+    },
+    {
+      category: 'Portable AC Repair',
+      title: 'Cassette AC Installation',
+      description: 'अगर आपको नया Cassette AC लगवाना है तो यहाँ क्लिक करें',
+      price: 499,
+      warranty: '30 Days Warranty',
+    },
+    {
+      category: 'Ductlable AC Repair',
+      title: 'Central AC Maintenance',
+      description: 'अगर आपके Central AC को सर्विसिंग की जरूरत है तो यहाँ दबायें',
+      price: 999,
+      warranty: '60 Days Warranty',
+    },
+    {
+      category: 'Central AC Repair',
+      title: 'Central AC Maintenance',
+      description: 'अगर आपके Central AC को सर्विसिंग की जरूरत है तो यहाँ दबायें',
+      price: 999,
+      warranty: '60 Days Warranty',
+    },
+    {
+      category: 'Ductlable AC Repair',
+      title: 'Central AC Maintenance',
+      description: 'अगर आपके Central AC को सर्विसिंग की जरूरत है तो यहाँ दबायें',
+      price: 999,
+      warranty: '60 Days Warranty',
+    },
+    {
+      category: 'Central AC Repair',
+      title: 'Central AC Maintenance',
+      description: 'अगर आपके Central AC को सर्विसिंग की जरूरत है तो यहाँ दबायें',
+      price: 999,
+      warranty: '60 Days Warranty',
+    },
+    {
+      category: 'Window AC Repair',
+      title: 'Window AC Repair',
+      description: 'अगर आपका Window AC ठीक से कार्य नहीं कर रहा है तो यहाँ क्लिक करें',
+      price: 296,
+      warranty: '15 Days Warranty',
+    },
+    {
+      category: 'Split AC Repair',
+      title: 'Split AC Repair',
+      description: 'अगर आपका Split AC पर्याप्त ठण्डा नहीं कर रहा है तो यहाँ दबायें',
+      price: 299,
+      warranty: '15 Days Warranty',
+    },
+    {
+      category: 'Portable AC Repair',
+      title: 'Cassette AC Installation',
+      description: 'अगर आपको नया Cassette AC लगवाना है तो यहाँ क्लिक करें',
+      price: 499,
+      warranty: '30 Days Warranty',
+    },
+    {
+      category: 'Ductlable AC Repair',
+      title: 'Central AC Maintenance',
+      description: 'अगर आपके Central AC को सर्विसिंग की जरूरत है तो यहाँ दबायें',
+      price: 999,
+      warranty: '60 Days Warranty',
+    },
+    {
+      category: 'Central AC Repair',
+      title: 'Central AC Maintenance',
+      description: 'अगर आपके Central AC को सर्विसिंग की जरूरत है तो यहाँ दबायें',
+      price: 999,
+      warranty: '60 Days Warranty',
+    },
+    {
+      category: 'Ductlable AC Repair',
+      title: 'Central AC Maintenance',
+      description: 'अगर आपके Central AC को सर्विसिंग की जरूरत है तो यहाँ दबायें',
+      price: 999,
+      warranty: '60 Days Warranty',
+    },
+    {
+      category: 'Central AC Repair',
+      title: 'Central AC Maintenance',
+      description: 'अगर आपके Central AC को सर्विसिंग की जरूरत है तो यहाँ दबायें',
+      price: 999,
+      warranty: '60 Days Warranty',
+    },
+    {
+      category: 'Window AC Repair',
+      title: 'Window AC Repair',
+      description: 'अगर आपका Window AC ठीक से कार्य नहीं कर रहा है तो यहाँ क्लिक करें',
+      price: 296,
+      warranty: '15 Days Warranty',
+    },
+    {
+      category: 'Split AC Repair',
+      title: 'Split AC Repair',
+      description: 'अगर आपका Split AC पर्याप्त ठण्डा नहीं कर रहा है तो यहाँ दबायें',
+      price: 299,
+      warranty: '15 Days Warranty',
+    },
+    {
+      category: 'Portable AC Repair',
+      title: 'Cassette AC Installation',
+      description: 'अगर आपको नया Cassette AC लगवाना है तो यहाँ क्लिक करें',
+      price: 499,
+      warranty: '30 Days Warranty',
+    },
+    {
+      category: 'Ductlable AC Repair',
+      title: 'Central AC Maintenance',
+      description: 'अगर आपके Central AC को सर्विसिंग की जरूरत है तो यहाँ दबायें',
+      price: 999,
+      warranty: '60 Days Warranty',
+    },
+    {
+      category: 'Central AC Repair',
+      title: 'Central AC Maintenance',
+      description: 'अगर आपके Central AC को सर्विसिंग की जरूरत है तो यहाँ दबायें',
+      price: 999,
+      warranty: '60 Days Warranty',
+    },
 
   ]);
 
+
+
   const [filteredServices, setFilteredServices] = useState(
-    allServices.filter((service) => service.category === 'Window AC')
+    allServices.filter((service) => service.category === 'Window AC Repaire')
   );
 
   const [isTransitioning, setIsTransitioning] = useState(true);
@@ -419,9 +568,9 @@ const SelectService = () => {
             Please Select Your <span className="blue">Service</span>
           </div>
         </div>
-        <div className="row">
+        <div className="d-flex service-container">
           {/* Category Section */}
-          <div className="col-lg-2">
+          <div className="col-lg-2 container-left">
             <Category
               categories={categories}
               onSelectCategory={handleCategorySelect}
@@ -429,8 +578,27 @@ const SelectService = () => {
           </div>
 
           {/* Services Section */}
-          <div className={`col-lg-10 service-list-container ${isTransitioning ? 'fade-out' : 'fade-in'}`}>
-            <ServiceList services={filteredServices} />
+          <div className='col-lg-10 container-right'>
+
+            <div className={`service-list-container ${isTransitioning ? 'fade-out' : 'fade-in'}`}>
+              <ServiceList services={filteredServices} />
+
+            </div>
+            <div className="row mt-5">
+              <div className="col-lg-12 col-sm-12">
+                <div className="total-select">
+                  <div className="bottom-warp">
+                    <div className="total-value">
+                      <h4>Total: ₹3,597</h4>
+                      <p>( 3 services selected )</p>
+                    </div>
+                    <div className="c-button">
+                      <a className="cart-btn" href="#" style={{textDecoration:"none"}}> Book Now</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

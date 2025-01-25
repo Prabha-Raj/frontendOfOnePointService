@@ -4,7 +4,7 @@
     right: 0 !important;
     left: 0 !important;
     z-index: 10;
-    margin-bottom: 50px;
+    margin: 0px !important;
     /* border: 2px solid red !important; */
 }
 
@@ -15,14 +15,16 @@
 }
 
 .dropdown-menu {
+    width: 220px;
     border: none !important;
     border-radius: 0px !important;
-    border-top: 2px solid #ff0022 !important;
+    border-top: 3px solid #ec0625fd !important;
     animation: fadeIn 0.5s ease-in-out; /* Adding fade-in animation */
     transition: all ease-in-out 0.5s;
     opacity: 0; /* Initially hidden */
     transform: translateY(-10px); /* Slide up effect */
     visibility: hidden;
+    font-size: 15px !important;
 }
 
 .dropdown-menu.show {
@@ -35,7 +37,9 @@
     border-bottom:1px solid #f0f0f0;
 }
 .dropdown-item:hover {
-    background-color: #ff0022 !important;
+    background-color: #ec0625fd !important;
+    animation: fadeIn 0.5s ease-in-out; /* Adding fade-in animation */
+    transition: all ease-in-out 0.5s;
 }
 
 /* Ensure the dropdown opens on hover */
@@ -60,16 +64,20 @@
 @keyframes fadeIn {
     0% {
         opacity: 0;
-        transform: translateY(-10px);
+        transform: translateX(-2px);
     }
     100% {
         opacity: 1;
-        transform: translateY(0);
+        transform: translateX(0);
     }
 }
 
-/* Hover effect for dropdown items */
-.dropdown-item:hover {
-    background-color: #ff0022 !important;
-    color: white !important;
+
+
+.phone-link:hover{
+    color: #ff0022 !important;
+}
+
+.btn-sm-add:hover{
+    color: #f0f0f0 !important;
 }

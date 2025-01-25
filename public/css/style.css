@@ -252,8 +252,8 @@ header {
     text-transform: uppercase;
 }
 
-.nav-item .nav-link:hover {
-    color: #dc3545;
+.nav-item:hover .nav-link {
+    color: #ff0022 !important;
 }
 
 .nav-item {

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import "./Category.css"
 const Category = ({ categories, onSelectCategory }) => {
+  
   return (
     <ul className="nav-tabs">
       {categories.map((category, index) => (

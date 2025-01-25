@@ -69,8 +69,8 @@
   .testimonial-rate {
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-size: 12px;
+    justify-content: start;
+    font-size: 15px;
     /* margin-bottom: 15px; */
     color: #f7b80b;
   }

@@ -27,8 +27,8 @@ const AboutSec = () => {
                   a seamless repair experience and ongoing support in maintaining your appliances.
                 </p>
                 <div className="button-group">
-                  <a className="button-link" href="aboutus.html">
-                    <button className="btn btn--glow">
+                  <a className="button-link"  href="aboutus.html">
+                    <button className="btn btn--glow " style={{background:"red"}}>
                       <span>Read More</span>
                     </button>
                   </a>

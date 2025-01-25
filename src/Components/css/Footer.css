@@ -10,6 +10,9 @@
   line-height: 1;
 
 }
+.ftr-link-label:hover a, .btn-link:hover{
+  color: #ff0022 !important;
+}
 .ftr-link-label a,i{
   text-decoration: none;
   color: rgb(255 255 255 / 73%);
@@ -135,4 +138,5 @@
     width: 35px !important;
     height: 35px !important;
   }
+}
 }

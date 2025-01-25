@@ -87,9 +87,19 @@
   line-height: 1.6;
   text-align: center;
 }
+.faqs-sec{
+display: flex !important;
+
+}
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .faqs-sec{
+    flex-direction: column !important;
+  }
+  .faqs-sec div{
+    width: 100% !important;
+  }
   .faq .main-title {
     font-size: 28px;
   }

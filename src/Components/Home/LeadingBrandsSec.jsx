@@ -24,7 +24,7 @@ const LeadingBrands = () => {
   const settings = {
     infinite: true,
     speed: 2000,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 0,
@@ -79,9 +79,11 @@ const LeadingBrands = () => {
                     className="img-fluid"
                     style={{
                       border: "1px solid gray",
-                      padding: "10px 45px",
+                      padding: "10px 10px",
                       background: "transparent",
                       borderRadius: "10px",
+                      width:"400px",
+                      height:"60px"
                     }}
                   />
                 </div>

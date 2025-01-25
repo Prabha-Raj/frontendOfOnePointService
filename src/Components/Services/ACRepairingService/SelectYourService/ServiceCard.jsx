@@ -1,21 +1,21 @@
 import React, { useState } from "react";
-import "./ServiceCard.css"; // Add custom CSS
+import "./ServiceCard.css"; 
 
 const ServiceCard = ({ title, description, price, warranty }) => {
-  const [showCounter, setShowCounter] = useState(false); // To toggle counter visibility
-  const [count, setCount] = useState(0); // To manage the counter value
+  const [showCounter, setShowCounter] = useState(false); 
+  const [count, setCount] = useState(0); 
 
   const handleAddClick = () => {
-    setShowCounter(true); // Show the counter input box
+    setShowCounter(true); 
   };
 
   const increment = () => {
-    setCount(count + 1); // Increment count
+    setCount(count + 1); 
   };
 
   const decrement = () => {
     if (count > 0) {
-      setCount(count - 1); // Decrement count, ensuring it doesn't go below 0
+      setCount(count - 1); 
     }
   };
 
@@ -41,13 +41,13 @@ const ServiceCard = ({ title, description, price, warranty }) => {
 
         {/* Card Footer */}
         <div className="card-footer px-3 d-flex align-items-center justify-content-between">
-          <div className="subServicePrice text-black">₹{price}</div>
+          <div className="subServicePrice text-black">₹ {price}</div>
           {!showCounter ? (
-            <button className="btn btn-outline-danger btn-sm" onClick={handleAddClick}>
+            <button className="btn btn-outline-danger btn-sm btn-sm-add" onClick={handleAddClick}>
               ADD
             </button>
           ) : (
-            <div className="counter-box d-flex align-items-center">
+            <div className="counter-box d-flex align-items-center ">
               <button className="counter-btn decrement" onClick={decrement}>
                 -
               </button>

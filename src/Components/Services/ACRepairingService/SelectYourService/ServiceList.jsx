@@ -2,6 +2,7 @@ import React from 'react';
 import ServiceCard from './ServiceCard';
 
 const ServiceList = ({ services }) => {
+  // console.log(services)
   return (
     <div className="row">
       {services.map((service, index) => (

@@ -20,14 +20,14 @@ const Home = () => {
         <MainBanner/>
         <AboutSec/>
         <WhyChooseUs/>
-        <MostBookedServices/>
-        <CompanyInfo/>
-        <LeadingBrandsSec/>
-        <TestimonialSection/>
-        <RatingBottomServices/>
-        <DownloadAppSec/>
-        <JoinUs/>
-        <PopularCities title={"Popular"}/>
+        {/* <MostBookedServices/> */}
+        {/* <CompanyInfo/> */}
+        {/* <LeadingBrandsSec/> */}
+        {/* <TestimonialSection/> */}
+        {/* <RatingBottomServices/> */}
+        {/* <DownloadAppSec/> */}
+        {/* <JoinUs/> */}
+        {/* <PopularCities title={"Popular"}/> */}
 
         <Footer/>
     </div>

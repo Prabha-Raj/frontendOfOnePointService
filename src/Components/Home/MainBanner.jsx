@@ -1,8 +1,11 @@
 import React from 'react';
-// import './MainBanner.css'; // Add your styles in a separate CSS file if needed.
+import "../css/MainBanner.css";
+
+
+
 const MainBanner = () => {
   return (
-    <section className="main-banner-wrapper p-2">
+    <section className="main-banner-wrapper p-2" >
       <div className="container-fluid">
         <div className="row align-items-center">
           {/* Left Section */}
