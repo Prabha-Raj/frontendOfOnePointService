@@ -534,7 +534,7 @@ const SelectService = () => {
 
 
   const [filteredServices, setFilteredServices] = useState(
-    allServices.filter((service) => service.category === 'Window AC Repaire')
+    allServices.filter((service) => service.category === 'Window AC Repair')
   );
 
   const [isTransitioning, setIsTransitioning] = useState(true);
@@ -557,7 +557,7 @@ const SelectService = () => {
       setIsTransitioning(false);
     }, 300);
 
-    console.log(`Category Selected: ${selectedCategory.name}`);
+    // console.log(`Category Selected: ${selectedCategory.name}`);
   };
 
   return (

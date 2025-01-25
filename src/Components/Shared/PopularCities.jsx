@@ -83,7 +83,7 @@ const PopularCities = ({title}) => {
       },
     ],
   };
-  console.log(cityData)
+  // console.log(cityData)
   
   return (
     <section className="our-partner">

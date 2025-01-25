@@ -12,7 +12,7 @@ const ServiceList = ({ services }) => {
           description={service.description}
           price={service.price}
           warranty={service.warranty}
-          onAdd={() => console.log(`${service.title} added`)}
+          // onAdd={() => console.log(`${service.title} added`)}
         />
       ))}
     </div>
