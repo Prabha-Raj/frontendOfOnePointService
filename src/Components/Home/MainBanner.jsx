@@ -1,11 +1,39 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import "../css/MainBanner.css";
 
-
-
 const MainBanner = () => {
+  // State for stats
+  const [stats, setStats] = useState({
+    activeUsers: 0,
+    tasksCompleted: 0,
+    activePartners: 0,
+    servingCities: 0,
+  });
+
+  // Function to animate the count
+  const animateCount = (targetValue, key) => {
+    let count = 0;
+    const increment = Math.ceil(targetValue / 100); // Adjust the speed of the increment
+    const interval = setInterval(() => {
+      count += increment;
+      if (count >= targetValue) {
+        clearInterval(interval);
+        count = targetValue;
+      }
+      setStats(prevStats => ({ ...prevStats, [key]: count }));
+    }, 20); // Adjust the speed of the count increase
+  };
+
+  // useEffect to start the animation on component mount
+  useEffect(() => {
+    animateCount(2719, 'activeUsers');
+    animateCount(3215, 'tasksCompleted');
+    animateCount(364, 'activePartners');
+    animateCount(12, 'servingCities');
+  }, []);
+
   return (
-    <section className="main-banner-wrapper p-2" >
+    <section className="main-banner-wrapper p-2">
       <div className="container-fluid">
         <div className="row align-items-center">
           {/* Left Section */}
@@ -35,7 +63,7 @@ const MainBanner = () => {
                       <img src={service.img} alt={service.text} />
                     </div>
                     <p>{service.text}</p>
-                    <a href="#" className="btn-category-service" style={{textDecoration:"none"}}>
+                    <a href="#" className="btn-category-service" style={{ textDecoration: "none" }}>
                       Book Now<span className="icon-keyboard_arrow_right"></span>
                     </a>
                   </div>
@@ -47,10 +75,10 @@ const MainBanner = () => {
                 <h2>Our Stats</h2>
               </div>
               {[
-                { count: "2719", label: "Active Users" },
-                { count: "3215", label: "Tasks Completed" },
-                { count: "364", label: "Active Partners" },
-                { count: "12", label: "Serving Cities" },
+                { count: stats.activeUsers, label: "Active Users" },
+                { count: stats.tasksCompleted, label: "Tasks Completed" },
+                { count: stats.activePartners, label: "Active Partners" },
+                { count: stats.servingCities, label: "Serving Cities" },
               ].map((stat, index) => (
                 <div className="col-lg-3 col-6" key={index}>
                   <div className="single-coutnerup">
