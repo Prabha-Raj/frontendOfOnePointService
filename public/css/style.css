@@ -5,6 +5,10 @@
     padding: 0;
 }
 
+/* Slider{
+    overflow-x: hidden;
+} */
+
 html {
     scroll-behavior: smooth;
 }
@@ -1433,8 +1437,8 @@ ul.partner-list li img {}
 .whatsapp {
     display: inline-block;
     position: fixed;
-    right: 15px;
-    bottom: 10px;
+    right: 35px !important;
+    bottom: 25px !important;
     background: limegreen;
     width: 50px;
     height: 50px;
@@ -1718,6 +1722,8 @@ footer .footer-two-menu .footer-logo {
     margin-bottom: 0px;
 }
 
+
+
 /*why-choose css end*/
 
 @media screen and (max-width:1600px) {
@@ -1780,7 +1786,7 @@ footer .footer-two-menu .footer-logo {
     }
 
     .nav-item .nav-link {
-        font-size: 13px;
+        font-size: 11px;
     }
 
     .tracking-input a {

@@ -10,12 +10,14 @@ import LucknowAcServicesTwo from './Components/LucknowAcServicesTwo/LucknowAcSer
 import BlogDetails from './Components/Blogs/BlogDetails';
 import BlogPage from './Components/Blogs/BlogPage';
 import JoinAsAServicePartner from './Components/JoinAsAServicePartner/JoinAsAServicePartner';
+import RecentBookings from './Components/Services/ACRepairingService/RecentBooking';
 
 function App() {
   return (
     <Router>
       <Routes>
         <Route path='/' element={<Home />} />
+        <Route path='/recent' element={<RecentBookings />} />
         <Route path='/aboutus.html' element={<About />} />
         <Route path='/contact_us.html' element={<Contact />} />
         <Route path='/ac-repair-services.html' element={<ACRepairingService />} />

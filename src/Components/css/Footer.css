@@ -160,6 +160,9 @@
     align-items: center !important;
     justify-content: center !important;
   }
+  .footer-btm .row div{
+    margin: 0 auto !important;
+  }
 }
 
 }

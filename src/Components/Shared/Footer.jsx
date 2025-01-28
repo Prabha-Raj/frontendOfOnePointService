@@ -132,6 +132,33 @@ const Footer = () => {
             <FooterBottom />
 
 
+            {/* Instant Booking */}
+            <div
+                id=""
+                className="scroll-to-top-btn position-fixed m-3 rounded-lg text-white shadow-lg"
+                style={{
+                    zIndex: 9999,
+                    bottom: "50%",
+                    right: "-65px",
+                    width: "150px",
+                    height: "35px",
+                    display: "flex",
+                    justifyContent: "center",
+                    gap:"10px",
+                    alignItems: "center",
+                    position: "fixed",
+                    transform: "rotate(270deg)",      
+                    backgroundColor: "#ff0022",
+                    color: "white",
+                    border: "none",
+                    cursor: "pointer",
+                    fontSize: "15px",
+                    fontWeight: "600",
+                    borderRadius: "6px 6px 0px 0px",
+                }}
+            >
+                <i className="fa-regular fa-calendar-days"></i> Instant Booking
+            </div>
             {/* Scroll to Top */}
             <div
                 id=""
@@ -141,8 +168,8 @@ const Footer = () => {
                 onClick={scrollToTop}
                 style={{
                     zIndex: 9999,
-                    bottom: "60px",
-                    right: "5px",
+                    bottom: "75px",
+                    right: "20px",
                     width: "50px",
                     height: "50px",
                     display: "flex",
@@ -161,14 +188,43 @@ const Footer = () => {
                     }}
                 ></i>
             </div>
+            <Link to="">
+            <div
+                id=""
+                className="scroll-to-top-btn position-fixed m-3 text-white shadow-lg"
+                style={{
+                    zIndex: 9999,
+                    bottom: "15px",
+                    right: "20px",
+                    width: "50px",
+                    height: "50px",
+                    display: "flex",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    cursor: "pointer",
+                    borderRadius:"50%",
+                    backgroundColor: "limegreen",
+                    animation: "ripple-out 1.5s ease-in-out infinite",
+                }}
+            >
+                <i
+                    className="fa fa-whatsapp"
+                    style={{
+                        transform: "rotate(0deg)", // Rotate the arrow upwards
+                        fontSize: "30px",
+                        transition: "transform 0.3s ease", // Smooth transition for hover effect
+                    }}
+                    ></i>
+            </div>
+                    </Link>
 
             {/* WhatsApp and Instant Booking Button */}
-            <a href="#" className="whatsapp" target="_blank" rel="noopener noreferrer">
+            {/* <a href="#" className="whatsapp" target="_blank" rel="noopener noreferrer">
                 <i className="fab fa-whatsapp"></i>
-            </a>
-            <button className="sticky-button" id="stickyButton">
+            </a> */}
+            {/* <button className="sticky-button" id="stickyButton">
                 <i className="fa-regular fa-calendar-days"></i> Instant Booking
-            </button>
+            </button> */}
         </footer>
     );
 };

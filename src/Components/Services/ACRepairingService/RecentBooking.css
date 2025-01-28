@@ -81,4 +81,6 @@
   .item {
     max-width: 350px; /* Match the overall card container size */
   }
-  
+.xz .slick-slider .slick-list{
+  height: 200px !important;
+}
