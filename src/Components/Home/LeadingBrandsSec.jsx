@@ -62,7 +62,7 @@ const LeadingBrands = () => {
 
   return (
     <section className="leading-brands">
-      <div className="container">
+      <div className="container-fluid">
         <div className="section-header text-center">
           <div className="main-title py-3">
             We Repair All <span className="blue">Brands</span>
