@@ -7030,7 +7030,7 @@ h2.services_header {
 
 
 .servicesheadeingss {
-    color: #000000;
+    color: black !important;
     font-size: 16px;
     text-align: left;
     text-transform: capitalize;
@@ -8497,4 +8497,9 @@ a.btn-grad1:hover {
     border-bottom: 2px solid #ffffff;
     padding: 0px 0px 20px;
     border-radius: 0px;
+}
+
+.link-decoration{
+    text-decoration: none !important;
+    color: black !important;
 }

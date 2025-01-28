@@ -3,13 +3,14 @@ import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import '../css/PopularCities.css';
+import { Link } from 'react-router-dom';
 
 // City data array
 const cityData = [
   { name: 'Indore', image: 'images/icons/dehradun_city.jpg' },
   { name: 'Jaipur', image: 'images/icons/jaipur_city.jpg' },
   { name: 'Kanpur', image: 'images/icons/kanpur_city.jpg' },
-  { name: 'Lucknow', image: 'images/icons/lucknow_city.jpg' },
+  { name: 'Lucknow', image: 'images/icons/lucknow_city.jpg', link:"/lucknow_ac_services_2.html" },
   { name: 'Pune', image: 'images/icons/pune_city.jpg' },
   { name: 'Patna', image: 'images/icons/patna_city.jpg' },
   { name: 'Sitapur', image: 'images/icons/sitapur_city.jpg' },
@@ -98,14 +99,16 @@ const PopularCities = ({title}) => {
             <Slider className="partner-list mt-3" {...settings}>
               {
               cityData.map((city, index) => (
-                <div key={index} className="item">
+                <Link key={index} to={city.link}>
+                <div  className="item">
                   <div className="icon">
                     <img src={city.image} alt={city.name} />
                   </div>
                   <div className="overlaya">
-                    <h6 style={{fontSize:"13px"}}>{city.name}</h6>
+                    <h6 style={{fontSize:"15px"}}>{city.name}</h6>
                   </div>
                 </div>
+                </Link>
               ))}
             </Slider>
           </div>

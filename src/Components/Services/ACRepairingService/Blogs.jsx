@@ -1,6 +1,7 @@
 import React from "react";
 import Slider from "react-slick";
 import "./Blogs.css"; // Custom styles for matching the design
+import { Link } from "react-router-dom";
 
 const Blogs = () => {
   const blogPosts = [
@@ -9,35 +10,35 @@ const Blogs = () => {
       image: "./images/ac_services.jpg",
       date: "June 10, 2024",
       description: "One Point provides window and split AC services in Lucknow.",
-      link: "blog_detail.html",
+      link: "/blog_details.html",
     },
     {
       title: "Blog Post 2",
       image: "./images/ac_services.jpg",
       date: "June 10, 2024",
       description: "One Point provides window and split AC services in Lucknow.",
-      link: "blog_detail.html",
+      link: "/blog_details.html",
     },
     {
       title: "Blog Post 3",
       image: "./images/ac_services.jpg",
       date: "June 10, 2024",
       description: "One Point provides window and split AC services in Lucknow.",
-      link: "blog_detail.html",
+      link: "/blog_details.html",
     },
     {
       title: "Blog Post 4",
       image: "./images/ac_services.jpg",
       date: "June 10, 2024",
       description: "One Point provides window and split AC services in Lucknow.",
-      link: "blog_detail.html",
+      link: "/blog_details.html",
     },
     {
       title: "Blog Post 5",
       image: "./images/ac_services.jpg",
       date: "June 10, 2024",
       description: "One Point provides window and split AC services in Lucknow.",
-      link: "blog_detail.html",
+      link: "/blog_details.html",
     },
   ];
 
@@ -91,9 +92,9 @@ const Blogs = () => {
                 <div className="blog-content">
                   <h3>{blog.title}</h3>
                   <p>{blog.description}</p>
-                  <a href={blog.link} className="read-more-btn">
+                  <Link href={blog.link} className="read-more-btn">
                     Read More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

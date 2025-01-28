@@ -1,5 +1,6 @@
 import React from 'react';
 import '../css/Footer.css';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
     return (
@@ -44,13 +45,13 @@ const Footer = () => {
                             <FooterLinks
                                 title="Important Links"
                                 links={[
-                                    { label: 'Home', href: 'index.html' },
-                                    { label: 'About Us', href: 'aboutus.html' },
+                                    { label: 'Home', href: '/index.html' },
+                                    { label: 'About Us', href: '/aboutus.html' },
                                     { label: 'Services', href: '#' },
                                     { label: 'Quick Help', href: '#' },
-                                    { label: 'Contact Us', href: '#' },
-                                    { label: 'Privacy Policy', href: 'Privacy_Policy.html' },
-                                    { label: 'Terms & Conditions', href: 'Terms&Conditions.html' },
+                                    { label: 'Contact Us', href: '/contact_us.html' },
+                                    { label: 'Privacy Policy', href: '/Privacy_Policy.html' },
+                                    { label: 'Terms & Conditions', href: '/Terms&Conditions.html' },
                                 ]}
                             />
                         </div>
@@ -63,7 +64,7 @@ const Footer = () => {
                                 <div className="services-grid">
                                     <div className="row row-cols-3">
                                         {[
-                                            { label: 'AC Repair Service', href: 'ac-service-repair.html' },
+                                            { label: 'AC Repair Service', href: '/ac-service-repair.html' },
                                             { label: 'Water Purifier Repair', href: '#' },
                                             { label: 'Refrigerator Repair', href: '#' },
                                             { label: 'Microwave Repair', href: '#' },
@@ -104,11 +105,23 @@ const Footer = () => {
                 {/* Footer Links */}
                 <div className="container-fluid">
                     <div className="p-3 text-center footer-links">
-                        {['Agra', 'Bhopal', 'Gorakhpur', 'Jaipur', 'Lucknow', 'Pune', 'Varanasi', 'Patna', 'Bareilly', 'Allahabad', 'Sitapur'].map(
-                            (city, index) => (
-                                <a key={index} href="javascript:void(0);" className="btn btn-link" style={{ textDecoration: 'none' }}>
-                                    {city}
-                                </a>
+                        {[
+                            {city:'Agra', },
+                            {city:'Bhopal', },
+                            {city:'Gorakhpur', },
+                            {city:'Jaipur', },
+                            {city:'Lucknow', link:"/lucknow_ac_services_2.html"},
+                            {city:'Pune', },
+                            {city:'Varanasi', },
+                            {city:'Patna', },
+                            {city:'Bareilly', },
+                            {city:'Allahabad', },
+                            {city:'Sitapur' },
+                        ].map(
+                            (item, index) => (
+                                <Link key={index} to={item.link} className="btn btn-link" style={{ textDecoration: 'none' }}>
+                                    {item.city}
+                                </Link>
                             )
                         )}
                     </div>
@@ -171,10 +184,10 @@ const FooterLinks = ({ title, links }) => (
         <div style={{ display: 'grid', gridTemplateColumns: '2' }}>
             {links.map((link, index) => (
                 <p key={index} className='ftr-link-label'>
-                    <a href={link.href}>
+                    <Link to={link.href}>
                         <i className="fa fa-caret-right me-2" style={{ color: "#ff0022" }}></i>
                         {link.label}
-                    </a>
+                    </Link>
                 </p>
             ))}
         </div>
@@ -213,7 +226,7 @@ const ContactDetails = () => (
                 ].map((social, index) => (
                     <p key={index} className='ftr-link-label'>
                         <a href="#" data-toggle="tooltip" target="_blank" rel="noopener noreferrer" title={social.label}>
-                            <i className={`fab fa-${social.icon}`}  style={{fontSize:"19px"}}></i>
+                            <i className={`fab fa-${social.icon}`} style={{ fontSize: "19px" }}></i>
                         </a>
                     </p>
                 ))}
@@ -245,10 +258,10 @@ const TrustSection = () => (
 );
 
 const FooterBottom = () => (
-    <div className="footer_bottom" >
+    <div className="footer-btm" >
         <div className="container-fluid">
-            <div className="row">
-                <div className="col-md-6 px-2" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+            <div className="row" style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                <div className="col-md-6 px-2" >
                     <div className="copyroght ps-2">
                         <p>One Point Multiple Services LLP © 2024 All rights reserved.</p>
                     </div>
@@ -256,7 +269,7 @@ const FooterBottom = () => (
                 <div className="col-md-6 text-md-right">
                     <div className="designed_by">
                         <p>
-                            Powered By: <a href="https://www.sigmasoftwares.org" target="_blank" rel="nofollow" style={{ textDecoration: "none" }}>Sigmait Software Designers Pvt. Ltd.</a>
+                            Powered By: <Link to="https://www.sigmasoftwares.org" target="_blank" rel="nofollow" style={{ textDecoration: "none", color:"#ffff" }}>Sigmait Software Designers Pvt. Ltd.</Link>
                         </p>
                     </div>
                 </div>

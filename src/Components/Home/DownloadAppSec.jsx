@@ -3,7 +3,7 @@ import React from 'react';
 const DownloadAppSec = () => {
   return (
     <section className="app-section">
-      <div className="container">
+      <div className="container-fluid">
         <div className="row align-items-center">
           {/* Image Column */}
           <div className="image-column col-lg-6 col-md-12 col-sm-12">
@@ -18,7 +18,7 @@ const DownloadAppSec = () => {
             <div className="inner-column">
               <div className="sec-title">
                 <span className="sub-title">Effortless booking,<br />Exclusive discounts</span>
-                <h2 className='text-danger'>Download our <br /> app now!</h2>
+                <h2 className='' style={{fontWeight:400, color:"#ff0022"}}>Download our <br /> app now!</h2>
                 <div className="text">
                   Get exclusive discounts and fast, reliable service when you book through our mobile app.
                   Download now and have access to our expert technicians at your fingertips. Convenient and easy, our app is

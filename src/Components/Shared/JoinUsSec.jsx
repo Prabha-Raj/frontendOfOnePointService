@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const JoinUs = () => {
   return (
@@ -14,7 +15,9 @@ const JoinUs = () => {
                 <h5>Join Our</h5>
                 <h4>Repair Team</h4>
                 <p>
+                  <Link to="/join-as-service-partner.html" className='link-decoration'>
                   Connect with us <i className="fa-solid fa-angles-right"></i>
+                  </Link>
                 </p>
                 <a href="#" className="app-btn" style={{textDecoration:"none"}}>Download Partner App</a>
               </div>

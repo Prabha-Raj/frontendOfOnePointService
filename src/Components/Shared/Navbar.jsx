@@ -34,7 +34,7 @@ const Navbar = () => {
                                 <Link className="nav-link" to="/aboutus.html">About Us</Link>
                             </li>
                             <li className="nav-item dropdown">
-                                <a
+                                <Link
                                     className="nav-link dropdown-toggle"
                                     href="#"
                                     id="servicesDropdown"
@@ -42,7 +42,7 @@ const Navbar = () => {
                                     aria-expanded="false"
                                 >
                                     Services
-                                </a>
+                                </Link>
                                 <ul className="dropdown-menu" aria-labelledby="servicesDropdown">
                                     <li><Link className="dropdown-item" to="/ac-repair-services.html">AC Repair &amp; Services</Link></li>
                                     <li><Link className="dropdown-item" to="#">RO Repair &amp; Services</Link></li>
@@ -55,6 +55,9 @@ const Navbar = () => {
 
                             <li className="nav-item">
                                 <Link className="nav-link" to="#">Quick Help</Link>
+                            </li>
+                            <li className="nav-item">
+                                <Link className="nav-link" to="/blog.html">Blogs</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/contact_us.html">Contact Us</Link>

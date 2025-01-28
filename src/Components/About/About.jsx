@@ -2,7 +2,7 @@ import React from "react";
 import Footer from "../Shared/Footer";
 import Navbar from "../Shared/Navbar";
 import TeamSec from "./TeamSec";
-import StatsSec from "./StatsSec";
+import StatsSec from "../Shared/StatsSec";
 import JoinUsSection from "./JoinUsSec";
 import PopularCities from "../Shared/PopularCities";
 

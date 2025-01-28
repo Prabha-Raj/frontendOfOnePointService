@@ -10,7 +10,7 @@ import LeadingBrandsSec from './LeadingBrandsSec'
 import TestimonialSection from './TestimonialSec'
 import RatingBottomServices from './RatingBottomServicesSec'
 import DownloadAppSec from './DownloadAppSec'
-import JoinUs from './JoinUsSec'
+import JoinUs from '../Shared/JoinUsSec'
 import PopularCities from '../Shared/PopularCities'
 
 const Home = () => {
@@ -27,9 +27,9 @@ const Home = () => {
         <RatingBottomServices/>
         <DownloadAppSec/>
         <JoinUs/>
-        <PopularCities title={"Popular"}/>
+        {/* <PopularCities title={"Popular"}/> */}
 
-        <Footer/>
+        {/* <Footer/> */}
     </div>
   )
 }
