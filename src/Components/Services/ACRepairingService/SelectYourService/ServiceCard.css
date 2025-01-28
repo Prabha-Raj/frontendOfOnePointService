@@ -93,3 +93,34 @@
     outline: none;
   }
   
+
+  @media (max-width:375px){
+    .card-footer{
+      gap: 20px;
+      padding-left: 0;
+      padding-right: 0;
+    }
+    .subServicePrice{
+      font-size: 15px;
+    }
+    .counter-box{
+
+      /* flex-direction: column; */
+    }
+    .counter-box .counter-input{
+      padding: 2px;
+      width: 20px;
+      height: 20px;
+    }
+    .counter-box{
+      gap: 0px;
+    }
+    .counter-btn{
+      height: 20px;
+      width: 20px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding-bottom: 4px;
+    }
+  }

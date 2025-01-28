@@ -41,7 +41,7 @@ const ServiceCard = ({ title, description, price, warranty }) => {
 
         {/* Card Footer */}
         <div className="card-footer px-3 d-flex align-items-center justify-content-between">
-          <div className="subServicePrice text-black">₹ {price}</div>
+          <div className="subServicePrice text-black">₹&nbsp;{price}</div>
           {!showCounter ? (
             <button className="btn btn-outline-danger btn-sm btn-sm-add" onClick={handleAddClick}>
               ADD
