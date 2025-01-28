@@ -27,9 +27,9 @@ const Home = () => {
         <RatingBottomServices/>
         <DownloadAppSec/>
         <JoinUs/>
-        {/* <PopularCities title={"Popular"}/> */}
+        <PopularCities title={"Popular"}/>
 
-        {/* <Footer/> */}
+        <Footer/>
     </div>
   )
 }
