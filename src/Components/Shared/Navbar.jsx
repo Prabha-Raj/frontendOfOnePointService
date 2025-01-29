@@ -1,9 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import "../css/Navbar.css";
+import QuickHelpModal from './QuickPage';
 
 const Navbar = () => {
+      const [isModalOpen, setModalOpen] = useState(false);
+    
     return (
+        <>
         <div>
             <nav className="navbar navbar-expand-lg px-3" id="Navbar">
                 <div className="container-fluid navbar-container">
@@ -54,7 +58,7 @@ const Navbar = () => {
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link" to="#">Quick Help</Link>
+                                <Link className="nav-link" onClick={() => setModalOpen(true)}>Quick Help</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="nav-link" to="/blog.html">Blogs</Link>
@@ -85,6 +89,15 @@ const Navbar = () => {
                 </div>
             </nav>
         </div>
+        {/* quick help */}
+         <div className="min-h-screen flex justify-center items-center bg-yellow-600">
+      <button
+        className="bg-red-500 text-white px-6 py-3 rounded">
+       </button>
+       <QuickHelpModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
+     </div>
+        {/* <QuickHelpModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} /> */}
+        </>
     );
 };
 
