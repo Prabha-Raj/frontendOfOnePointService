@@ -23,7 +23,7 @@
     max-width: 75%;
     width: 90%;
     display: flex;
-    overflow: hidden;
+    overflow:auto;
     flex-direction: row;
 }
 
