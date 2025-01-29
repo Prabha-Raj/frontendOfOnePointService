@@ -17,6 +17,7 @@
 
 /* Modal Container */
 .modal-container {
+    position: relative;
     background: white;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -111,6 +112,15 @@ textarea {
     font-size: 1rem;
 }
 
+.close-btn {
+    position: absolute;
+    top: -25px;
+    right: 0;
+    font-size: 50px;
+    z-index: 10;
+
+}
+
 @media (max-width: 1024px) {
     .modal-container {
         width: 95%;
@@ -120,7 +130,9 @@ textarea {
 @media (max-width: 768px) {
     .modal-container {
         flex-direction: column;
-        width: 90%;
+        width: 95%;
+        height: 70%;
+
     }
     
     .modal-image {
@@ -132,6 +144,10 @@ textarea {
 
     .modal-content {
         width: 100%;
+        gap: 50px;
+    }
+    .modal-content form{
+        gap: 20px;
     }
 }
 
@@ -157,3 +173,4 @@ textarea {
         text-align: center;
     }
 }
+
